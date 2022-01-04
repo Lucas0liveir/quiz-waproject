@@ -30,9 +30,7 @@ export default function NavBar() {
                         <Button onClick={()=> {
                             window.location.href = url
                         }} color='inherit' variant="outlined">Home</Button>
-                        <Button onClick={()=> {
-                            window.location.href = `${url}/history`
-                        }} color='inherit' variant="outlined">History</Button>
+                        <Button color='inherit' variant="outlined"><Link style={{textDecoration: 'none', color: '#fff' }} to='/history'>History</Link></Button>
                     </Stack>
                 </Toolbar>
             </AppBar>

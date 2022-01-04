@@ -2,7 +2,7 @@ import React from 'react'
 import { useStyles } from './styles.mui'
 import { IQuestionsHelper } from '../../contexts/questions'
 import { Resume } from '../Resume'
-import { Button, CardActions, Grid } from '@mui/material'
+import { Button, CardActions } from '@mui/material'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';

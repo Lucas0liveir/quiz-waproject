@@ -76,7 +76,6 @@ export function QuestionProvider(props: IQuestionProvider) {
                 }
             })
         }
-        console.log(questions[currentQuestion])
 
         const nextQuestion = currentQuestion + 1;
         if (nextQuestion < questions.length) {
@@ -107,7 +106,8 @@ export function QuestionProvider(props: IQuestionProvider) {
         async function getQuestionsAndTransformStructureOfQuestions() {
             try {
                 const { data } = await api.get(`api.php?amount=${amount}`)
-                console.log(data.results)
+                
+                
                 results.push(...data.results)
 
                 const questionHelper: IQuestion[] = []
@@ -158,7 +158,6 @@ export function QuestionProvider(props: IQuestionProvider) {
                 })
 
                 setQuestions(questionHelper)
-                console.log(questions)
 
             } catch (error) {
                 alert("Ocorreu um erro ao buscar as questões, tente novamente!");
