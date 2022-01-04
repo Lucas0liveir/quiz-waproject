@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/global.css"],"names":[],"mappings":"AAAA,KACI,UAAW,CACX,YAAa,CACb,kBAAmB,CACnB,sBACJ","file":"main.fe0cc3fd.chunk.css","sourcesContent":["html {\r\n    width: 100%;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}"]}
