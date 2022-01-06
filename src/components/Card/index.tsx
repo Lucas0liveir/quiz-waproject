@@ -32,7 +32,7 @@ export default function HistoryBox({ savedQuestion, onResume, setOnResume }: ISa
                 :
                 !onResume &&
                 <div className={classes.cards}>
-                    <Card style={{width: 200, paddingBottom: 10}}>
+                    <Card>
                         <CardContent>
                             <Typography variant='subtitle1'>
                                 You scored {savedQuestion.score} points

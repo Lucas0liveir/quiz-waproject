@@ -166,7 +166,7 @@ export function QuestionProvider(props: IQuestionProvider) {
         
             getQuestionsAndTransformStructureOfQuestions()
 
-    }, [amount])
+    }, [init])
 
 
     return (

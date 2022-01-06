@@ -8,13 +8,18 @@ import { Resume } from "../Resume"
 function MainBox() {
 	const [resume, setResume] = useState<boolean>(false)
 	const classes = useStyles()
-	const { score, showScore, questions, currentQuestion, handleAnswerOptionClick } = useContext(QuestionsContext)
+	const { score, showScore, questions, currentQuestion, handleAnswerOptionClick, amount, setInit, init } = useContext(QuestionsContext)
 
-	if (questions.length === 0) {
-		const url = window.location.origin
-		window.location.href = url
+	if (questions.length === 0 && amount > 0) {
+		setInit(true)
+	} else {
+		if (amount <= 0) {
+			const url = window.location.origin
+			window.location.href = url
+		}
+
 	}
-	
+
 	const growQuestions = (
 		<Container className={classes.container}>
 			<>
@@ -52,7 +57,7 @@ function MainBox() {
 						)
 						:
 						(
-							<Resume resume={resume} questions={questions} setResume={setResume}/>
+							<Resume resume={resume} questions={questions} setResume={setResume} />
 						)
 
 					}

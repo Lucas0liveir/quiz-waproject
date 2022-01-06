@@ -16,13 +16,13 @@ export default function History() {
     const useStyles = makeStyles({
         root: {
             display: 'flex',
-            alignItems: 'center',
-            justifyContent: !onResume ? 'flex-start' : 'center',
+            alignItems: 'flex-start',
+            justifyContent: 'center',
             width: '100%',
-            margin: '100px 0 0 50px',
+            marginTop: 100,
+            marginLeft: onResume ? 0 : 50,
             flexDirection: 'row',
             flexWrap: 'wrap'
-
         }
     })
 
@@ -45,7 +45,7 @@ export default function History() {
         )
     }
     return (
-        <div style={{display: 'flex'}}>
+        <>
             <NavBar />
             <div className={classes.root}>
 
@@ -72,7 +72,7 @@ export default function History() {
 
                 }
             </div>
-        </div>
+        </>
 
     )
 }

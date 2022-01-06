@@ -6,12 +6,12 @@ const useStyles = makeStyles({
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'flex-start',
-		flexDirection: 'row',
 		
 	},
 	cards: {
-		width: "100%",
+		width: 200,
 		minHeight: 200,
+		
 		height: 'min-content',
 		borderRadius: 15,
 		padding: 20,
